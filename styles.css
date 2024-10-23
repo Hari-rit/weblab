@@ -1,0 +1,22 @@
+#tbb {
+    width: 100%;              
+    border-collapse: collapse; 
+    font-family: sans-serif;  
+}
+#tbb  th {
+    padding: 20px 0;            
+    text-align: left;            
+    color: white;                
+    background-color: #b22222;   
+    border: 1px solid grey;      
+}
+#tbb  td {
+    padding: 8px;               
+    border: 1px solid grey;      
+}
+#tbb  tr:nth-child(even) {
+    background-color: #f2f2f2;  
+}
+#tbb  tr:hover {
+    background-color: burlywood; 
+}
