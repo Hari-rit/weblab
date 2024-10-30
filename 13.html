@@ -1,0 +1,42 @@
+<html>
+<head>
+	<style>
+		body {
+			text-align: center;
+			margin-top: 100px;
+			font-family: Arial, Sans-Serif;
+		}
+		img{
+			width:200px;
+			height:auto;
+			margin:20px;
+		}
+		button {
+			padding: 10px 20px;
+			margin:10px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+	<img id="bulb" src="bulboff.png"><br>
+	<button id="offbutton">TURN OFF</button>	
+	<button id="onbutton">TURN ON</button>
+	<script>
+	const off=document.getElementById("offbutton");
+	const on=document.getElementById("onbutton");
+	on.addEventListener('click', function() {
+			document.getElementById("bulb").src ='bulbon.png';
+			
+		});
+	off.addEventListener('click', function() {
+			document.getElementById("bulb").src ='bulboff	.png';
+			
+		});	
+		
+	</script>
+</body>
+</html>
+
