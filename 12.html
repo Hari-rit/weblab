@@ -1,29 +1,7 @@
 <html>
-<head>
-	<style>
-		body {
-			text-align: center;
-			margin-top: 100px;
-			font-family: Arial, Sans-Serif;
-		}
-		button {
-			padding: 15px 30px;
-			font-size: 18px;
-			cursor: pointer;
-		}
-	</style>
-</head>
-<body>
-	<button id="crbtn">Change Background Color</button>
-	<script>
-		const crbtn = document.getElementById("crbtn");
-		crbtn.addEventListener('click', function() {
-			document.body.style.backgroundColor = 'red';
-		});
-		crbtn.addEventListener('dblclick', function() {
-			document.body.style.backgroundColor = 'green';
-		});
-	</script>
-</body>
+    <form action="12.php" method="post">
+        <label for="em">Enter the Email:</label>
+        <input type="email" name="em">
+        <input type="submit" value="submit">
+    </form>
 </html>
-
