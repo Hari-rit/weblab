@@ -11,11 +11,10 @@ if (isset($_POST['submit'])) {
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
 
-
         if (password_verify($password, $user['password'])) {
-            setcookie('user_id', $user['id'], time() + (86400 * 30), "/");  // 30 days
+            setcookie('user_id', $user['id'], time() + (86400 * 30), "/");
             setcookie('email', $user['email'], time() + (86400 * 30), "/");
-            header("Location: dashboard.php");
+            header("Location: c4-3dash.php");
             exit();
         } else {
             echo "Incorrect password.";
@@ -25,13 +24,14 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
+
 <html>
 <head>
     <title>Login</title>
 </head>
 <body>
     <h2>Login</h2>
-    <form method="POST" action="login.php">
+    <form method="POST" action="c4-3login.php">
         <label>Email: </label><br>
         <input type="email" name="email" required><br><br>
         
@@ -42,3 +42,4 @@ if (isset($_POST['submit'])) {
     </form>
 </body>
 </html>
+

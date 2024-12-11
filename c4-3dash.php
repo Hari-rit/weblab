@@ -2,7 +2,7 @@
 include('c4-3db.php');
 
 if (!isset($_COOKIE['user_id'])) {
-    header("Location: login.php");
+    header("Location: c4-3login.php");
     exit();
 }
 
@@ -19,16 +19,15 @@ if ($result->num_rows > 0) {
     exit();
 }
 ?>
+
 <html>
-<head>
-    <title>Dashboard</title>
-</head>
 <body>
     <h2>Welcome, <?php echo $user['first_name'] . ' ' . $user['last_name']; ?></h2>
     <p>Email: <?php echo $user['email']; ?></p>
     <p>Gender: <?php echo $user['gender']; ?></p>
     <p>Date of Birth: <?php echo $user['dob']; ?></p>
 
-    <a href="logout.php">Logout</a>
+    <a href="c4-3logout.php">Logout</a>
 </body>
 </html>
+
