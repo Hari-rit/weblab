@@ -1,8 +1,9 @@
 <?php
-session_start();
-session_unset(); 
-session_destroy(); 
+session_start(); // Start the session
 
-header("Location: c4-4login.php"); 
+session_unset(); // Remove all session variables
+session_destroy(); // Destroy the session
+
+header("Location: c4-3login.php");
 exit();
 ?>
